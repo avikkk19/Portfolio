@@ -12,10 +12,10 @@ const navData = [
 function Nav() {
     return (
         <nav className="h-full">
-            <ul className="flex flex-col items-start justify-start gap-10 h-full  w-full md:gap-0 md:h-10 md:flex-row md:justify-evenly  md:items-center">
+            <ul className="flex flex-col items-start justify-start gap-10 h-full min-h-10  w-full md:gap-0 md:h-10 md:flex-row md:justify-evenly md:text-white md:text-md md:items-center">
                 {navData.map((item, index) => {
                     return (
-                        <li className="list-none hover:text-indigo-600 font-semibold text-xl"><a href={item.href}>{item.name}</a></li>
+                        <li key={index} className="list-none hover:text-indigo-600 font-semibold text-xl"><a href={item.href}>{item.name}</a></li>
                     );
                 })}
             </ul>
