@@ -112,14 +112,15 @@ function Hero() {
                 </section>
             </div>
             <div
-                className={`hidden md:block w-1/2 rounded-3xl m-2 px-6 py-2 backdrop-blur-lg shadow-md transition-all duration-700 ease-in-out
+                className={`hidden md:block w-1/2 rounded-3xl m-2 px-6 py-2 backdrop-blur-xl transition-all duration-700 ease-in-out
                         ${isScrolled ? 
-                            "fixed top-4 left-0 right-0 z-50 mx-auto max-w-4xl opacity-100 animate-fadeIn2"
+                            "fixed top-4 left-0 right-0 z-50 mx-auto max-w-4xl opacity-100 animate-fadeIn2 "
                         : "absolute top-[80%] transform opacity-100 animate-fadeIn"
                     }`}
                 style={{
                     backgroundColor: "rgba(255, 255, 255, 0.1)",
                     transition: "opacity 0.7s ease-in-out, transform 0.5s",
+                    boxShadow: "0 1px 22px 0 rgba(31, 38, 135, 0.57), 0 1.5px 6px 0 rgba(0,0,0,0.15)"
                 }}
             >
                 <Nav />
