@@ -1,7 +1,9 @@
 import data from "../../data";
 import SectionIntro from "../components/SectionIntro";
 import { ButtonWhite } from "../components/Buttons";
+import { useState } from "react";
 export default function About() {
+    const [showOverlay, setShowOverlay] = useState(false);
     return (
         <>
             <SectionIntro title={data.about.title} tagline={data.about.paragraph} options={{ textColor: "text-amber-50" }} />
@@ -26,14 +28,15 @@ export default function About() {
                     <ButtonWhite label="View Resume" ></ButtonWhite>
                 </div>
                 <div className="mt-5 ml-2 md:ml-6 p-6 flex flex-col gap-5 bg-gray-400/10 rounded-2xl h-full justify-between cursor-pointer">
-                    <h3 className="text-gray-500 text-lg font-medium">Hover over this area to discover more about me!</h3>
+                    <h3 className="text-gray-500 text-lg font-medium">{window.innerWidth > 250 ? "Hover over this area to discover more about me!": "Tap this area to discover more about me!"}</h3>
                     <div className="flex-1 flex items-center justify-center group relative">
                         <img
                             src={data.about.profileImage}
                             alt="image not available"
                             className="mx-auto shadow-lg rounded-2xl"
                         />
-                        <div className="absolute rounded-2xl p-10 bg-gray-900/80 h-29/30 flex items-center justify-center text-white translate-x-[200%] group-hover:translate-x-0 transition-all duration-500">
+
+                        <div className={`absolute rounded-2xl p-10 backdrop-blur-md bg-gray-900/80 h-29/30 flex items-center justify-center text-white translate-x-[200%] group-hover:translate-x-0 transition-all duration-500 ${showOverlay ? "translate-x-0" : "translate-x-[200%]"}`}>
                             <span className="text-5xl sm:text-7xl text-yellow-400 font-serif leading-none drop-shadow-lg mr-2 select-none -translate-y-[100%]">
                                 &#8220;
                             </span>
