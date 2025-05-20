@@ -52,7 +52,7 @@ function Hero() {
     }, [isScrolled]);
     
     return (
-        <div className="w-full overflow-x-hidden">
+        <div className="w-full overflow-x-hidden p-2">
             <Header />
 
             <div className="md:flex md:flex-row-reverse md:gap-15 md:px-10 md:items-center">
