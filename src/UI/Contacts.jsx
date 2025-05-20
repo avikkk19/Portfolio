@@ -1,5 +1,4 @@
 import SectionIntro from "../components/SectionIntro";
-import data from "../../data";
 import { ButtonWhite } from "../components/Buttons";
 
 function Contacts() {
@@ -13,7 +12,7 @@ function Contacts() {
 
       <div className="flex flex-col gap-8 mt-5 p-2 md:p-5">
         <div className="group relative flex flex-col md:flex-row gap-8 rounded-2xl p-8 transition-all duration-300">
-          {/* Contact Form Section */}
+          {/* Contact Form Section maybe supabase? */}
           <div className="flex-1 space-y-4 p-8 bg-gradient-to-br from-gray-900/40 to-gray-800/40 rounded-xl border border-white/10 shadow-lg">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-amber-400 via-purple-400 to-pink-400 bg-clip-text text-transparent group-hover:from-amber-300 group-hover:via-purple-300 group-hover:to-pink-300 transition-colors duration-300">
               Send me a Message
@@ -45,7 +44,7 @@ function Contacts() {
             </form>
           </div>
 
-          {/* Contact Info Section */}
+          {/* Contact Info Sectionnn */}
           <div className="md:w-1/2 space-y-6 p-8 bg-gradient-to-br from-gray-900/40 to-gray-800/40 rounded-xl border border-white/10 shadow-lg">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-amber-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
               Contact Information
@@ -113,7 +112,7 @@ function Contacts() {
               </div>
             </div>
 
-            {/* Social Links */}
+            {/* Social links , more cannbe added */}
             <div className="pt-4">
               <h4 className="text-lg font-semibold text-gray-200 mb-3">
                 Connect with me
@@ -155,7 +154,6 @@ function Contacts() {
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                   </svg>
                 </a>
-                
               </div>
             </div>
           </div>
@@ -164,5 +162,5 @@ function Contacts() {
     </>
   );
 }
-
+// TODO: bob or bhAAi
 export default Contacts;
