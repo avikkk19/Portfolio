@@ -7,7 +7,7 @@ export default function About() {
             <SectionIntro title={data.about.title} tagline={data.about.paragraph} options={{ textColor: "text-amber-50" }} />
             <div className="grid md:grid-cols-2 gap-2">
                 <div className="mt-5 ml-2 md:ml-6 p-8 flex flex-col gap-6 bg-gradient-to-br from-gray-400/10 to-gray-500/5 backdrop-blur-sm rounded-2xl border border-gray-500/20 shadow-xl hover:shadow-2xl transition-all duration-300">
-                    <h2 className="text-transparent bg-gradient-to-bl from-purple-400 via-white-500 to-amber-500 bg-clip-text text-3xl font-bold mt-2  pb-3 tracking-wide relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-1/3 after:h-0.5 after:bg-amber-400">
+                    <h2 className="text-transparent bg-gradient-to-bl from-purple-400 via-white-500 to-amber-500 bg-clip-text text-3xl font-bold mt-2  pb-3 tracking-wide relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-1/3 after:h-0.5 after:bg-gradient-to-bl after:from-red-900 via-white-500 after:to-amber-500">
                         Why I Do What I Do ?
                     </h2>
                     <p className="text-gray-300 leading-relaxed text-lg">{data.about.whyIDoIt}</p>
@@ -31,9 +31,9 @@ export default function About() {
                         <img
                             src={data.about.profileImage}
                             alt="image not available"
-                            className="mx-auto shadow-lg"
+                            className="mx-auto shadow-lg rounded-2xl"
                         />
-                        <div className="absolute p-10 bg-gray-900/80 h-full flex items-center justify-center text-white translate-x-[200%] group-hover:translate-x-0 transition-all duration-500">
+                        <div className="absolute rounded-2xl p-10 bg-gray-900/80 h-29/30 flex items-center justify-center text-white translate-x-[200%] group-hover:translate-x-0 transition-all duration-500">
                             <span className="text-5xl sm:text-7xl text-yellow-400 font-serif leading-none drop-shadow-lg mr-2 select-none -translate-y-[100%]">
                                 &#8220;
                             </span>
