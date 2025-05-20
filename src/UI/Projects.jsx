@@ -4,7 +4,12 @@ import { useEffect, useState, useRef } from "react";
 
 function Projects() {
     const [hoveredVideo, setHoveredVideo] = useState(null);
+    const [isTouchDevice, setIsTouchDevice] = useState(false);
     const videoRefs = useRef({});
+
+    useEffect(() => {
+        setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
+    }, []);
 
     useEffect(() => {
         if (hoveredVideo) {
@@ -21,12 +26,21 @@ function Projects() {
         }, 1000);
     };
 
+    const handleVideoClick = (e) => {
+        const video = e.target;
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    };
+
     return (
         <>
             <SectionIntro title={data.projects.title} tagline={data.projects.tagline} options={{textColor: "text-amber-50"}} />
             <div className="text-center mb-8">
-                <span className="text-amber-50/80 text-sm font-medium bg-black/30 px-4 py-2 rounded-full backdrop-blur-sm">
-                    Hover over videos to play
+                <span className="text-amber-50/40 text-sm font-medium bg-black/30 px-4 py-2 rounded-full backdrop-blur-sm">
+                    {isTouchDevice ? "Tap to play videos" : "Hover over videos to play"}
                 </span>
             </div>
             <div className="flex flex-col gap-8 mt-5 p-2 md:p-5">
@@ -69,7 +83,7 @@ function Projects() {
                                 </a>
                             </div>
 
-                            <div className="md:w-1/2 bg-gradient-to-br from-gray-900/40 to-gray-800/40 rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                            <div className="md:w-1/2 bg-gradient-to-br from-gray-900/40 to-gray-800/40 rounded-xl overflow-hidden border border-white/10 shadow-lg cursor-pointer">
                                 <div className="p-2 bg-gradient-to-br from-gray-900/60 to-gray-800/60">
                                     {project.type === "video" ? (
                                         <video 
@@ -81,11 +95,14 @@ function Projects() {
                                             muted
                                             playsInline
                                             loop
+                                            onClick={handleVideoClick}
                                             onLoadedData={() => handleVideoLoad(videoRefs.current[index])}
-                                            onMouseEnter={(e) => setHoveredVideo(e.target)}
+                                            onMouseEnter={(e) => !isTouchDevice && setHoveredVideo(e.target)}
                                             onMouseLeave={(e) => {
-                                                e.target.pause();
-                                                setHoveredVideo(null);
+                                                if (!isTouchDevice) {
+                                                    e.target.pause();
+                                                    setHoveredVideo(null);
+                                                }
                                             }}
                                         />
                                     ) : (
