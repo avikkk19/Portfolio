@@ -45,6 +45,33 @@ const data = {
         media: "/projects/Trefloo.mp4",
       },
       {
+        title: "Qconn",
+        description:
+          "A question-and-answer platform for students and mentors to interact, with role-based access, achievement points, and full CRUD support for content.",
+        techstack: ["HTML", "CSS", "JavaScript", "Supabase"],
+        type: "image",
+        link: "https://5mokshith.github.io/Qconn",
+        media: "/projects/Qconn.png",
+      },
+      {
+        title: "Chatbot",
+        description:
+          "An AI chatbot for public/enterprise use, handling queries about HR policies, IT support, and events. It features document analysis, profanity filtering, and scalable multi-user support.",
+        techstack: ["FastAPI", "Python", "NLP", "Supabase", "BERT"],
+        type: "video",
+        link: "local development",
+        media: "/projects/chatBot.mp4",
+      },
+      {
+        title: "ChefMate",
+        description:
+          "An intelligent recipe recommender that generates creative dishes based on user-provided ingredients using LLMs and interactive UI.",
+        techstack: ["React", "OpenAI API", "Tailwind", "Anthropic API"],
+        type: "video",
+        link: "local development",
+        media: "/projects/chefMate.mp4",
+      },
+      {
         title: "CardioGuard",
         description:
           "A real-time heart health monitoring and emergency alert system using ECG sensor data and machine learning to detect cardiac arrests and notify doctors and emergency contacts.",
