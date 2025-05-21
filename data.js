@@ -2,6 +2,9 @@ const data = {
   general: {
     name: "Mokshith Rao",
     catchy: "Mokshith",
+    email: "mokshithrao1481@gmail.com",
+    location: "Hyderabad, Telangana, India",
+    Phone: "1234567890"
   },
   hero: {
     Heading: "Hi, I'm Mokshith",
