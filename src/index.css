@@ -4,6 +4,11 @@ body {
     @apply bg-black;
 }
 
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
+}
 body {
     overflow-x: hidden;
 }

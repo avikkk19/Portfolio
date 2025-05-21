@@ -4,12 +4,7 @@ import { useEffect, useState, useRef } from "react";
 
 function Projects() {
     const [hoveredVideo, setHoveredVideo] = useState(null);
-    const [isTouchDevice, setIsTouchDevice] = useState(false);
     const videoRefs = useRef({});
-
-    useEffect(() => {
-        setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
-    }, []);
 
     useEffect(() => {
         if (hoveredVideo) {
@@ -26,21 +21,12 @@ function Projects() {
         }, 1000);
     };
 
-    const handleVideoClick = (e) => {
-        const video = e.target;
-        if (video.paused) {
-            video.play();
-        } else {
-            video.pause();
-        }
-    };
-
     return (
         <>
             <SectionIntro title={data.projects.title} tagline={data.projects.tagline} options={{textColor: "text-amber-50"}} />
             <div className="text-center mb-8">
                 <span className="text-amber-50/40 text-sm font-medium bg-black/30 px-4 py-2 rounded-full backdrop-blur-sm">
-                    {isTouchDevice ? "Tap to play videos" : "Hover over videos to play"}
+                    Hover over videos to play
                 </span>
             </div>
             <div className="flex flex-col gap-8 mt-5 p-2 md:p-5">
@@ -79,7 +65,7 @@ function Projects() {
                                     rel="noopener noreferrer"
                                     className="inline-block mt-4 px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg font-medium hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-purple-500/25"
                                 >
-                                    View Project
+                                    Check it Out
                                 </a>
                             </div>
 
@@ -95,14 +81,11 @@ function Projects() {
                                             muted
                                             playsInline
                                             loop
-                                            onClick={handleVideoClick}
                                             onLoadedData={() => handleVideoLoad(videoRefs.current[index])}
-                                            onMouseEnter={(e) => !isTouchDevice && setHoveredVideo(e.target)}
+                                            onMouseEnter={(e) => setHoveredVideo(e.target)}
                                             onMouseLeave={(e) => {
-                                                if (!isTouchDevice) {
-                                                    e.target.pause();
-                                                    setHoveredVideo(null);
-                                                }
+                                                e.target.pause();
+                                                setHoveredVideo(null);
                                             }}
                                         />
                                     ) : (

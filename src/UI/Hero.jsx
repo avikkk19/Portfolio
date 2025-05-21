@@ -2,21 +2,21 @@ import { useEffect, useState } from "react";
 import data from "../../data";
 import Nav from "./Nav.jsx";
 import { HeadingLarge, HeadingSmall } from "../components/Headings.jsx";
-import Spline from '@splinetool/react-spline';
+/* import Spline from '@splinetool/react-spline'; */
 import { Menu, X } from "lucide-react";
 
 const name = data.general.name; // Dont go fancy it is just the name 
 function Header() {
-    const [navState, setNavState] = useState(false); // Mokshith- true == open, false == close
+    const [navState, setNavState] = useState(false); // Bro - true == open, false == close
     function setNav() {
         setNavState(!navState);
     }
     return (
         <header className="flex justify-between items-center relative top-0  px-4 py-1 md:px-6 text-amber-50 md:py-2 min-w-screen max-h-12">
             <h1 className="text-2xl font-semibold md:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">{name}</h1>
-            <div className="md:hidden cursor-pointer absolute right-6 z-10" onClick={setNav}>{navState ? <X /> : <Menu />}</div>
+            <div className="md:hidden cursor-pointer absolute right-6 z-11" onClick={setNav}>{navState ? <X /> : <Menu />}</div>
             <div
-                className={`md:hidden absolute w-50 px-5 py-10 top-0 right-0 h-[calc(100vh-30%)] rounded-2xl transition-transform duration-300  ${navState ? "translate-x-0" : "translate-x-full"
+                className={`md:hidden absolute w-50 px-5 py-10 top-0 right-0 h-[calc(100vh-30%)] rounded-2xl transition-transform duration-300 z-10  ${navState ? "translate-x-0" : "translate-x-full"
                     }`}
                 style={{ backgroundColor: "rgba(0,0,0,0.1)", backdropFilter: "blur(10px)" }}
             >
@@ -51,7 +51,7 @@ function Hero() {
         };
     }, [isScrolled]);
 
-    // Track if WebGL is available and if Spline failed
+    /* // Track if WebGL is available and if Spline failed
     const [webglError, setWebglError] = useState(false);
 
     // Utility to check WebGL support
@@ -72,7 +72,7 @@ function Hero() {
         if (!isWebGLAvailable()) {
             setWebglError(true);
         }
-    }, []);
+    }, []); */
 
     return (
         <div className="w-full overflow-x-hidden p-2">
@@ -81,7 +81,7 @@ function Hero() {
             <div className="md:flex md:flex-row-reverse md:gap-15 md:px-10 md:items-center">
                 <section className="h-screen w-full border-2 overflow-hidden">
                     <div className="h-3/8 w-full scale-190 translate-x-15 translate-y-[45%] md:translate-x-40 md:translate-y-15 md:h-7/8 md:scale-115 ">
-                        {!webglError ? (
+                        {/* {!webglError ? (
                             <Spline
                                 scene="https://prod.spline.design/Zdm1LQAreiugS6eP/scene.splinecode"
                                 onError={() => setWebglError(true)}
@@ -92,7 +92,7 @@ function Hero() {
                                     3D experience unavailable: WebGL is not supported or context was lost.
                                 </span>
                             </div>
-                        )}
+                        )} */}
                     </div>
                 </section>
                 <section
