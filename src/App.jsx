@@ -3,6 +3,7 @@ import About from "./UI/About.jsx";
 import Projects from "./UI/Projects.jsx";
 import Contacts from "./UI/Contacts.jsx";
 import Background from "./components/Background.jsx";
+import Skills from "./UI/Skills.jsx";
 function App() {
   return (
     <>
@@ -20,6 +21,10 @@ function App() {
         className="min-h-screen w-full mt-10 md:mt-20 p-3 md:p-6"
       >
         <Projects></Projects>
+      </section>
+
+      <section id="skills" className="min-h-screen w-full mt-5 md:mt-10 p-3 md:p-6">
+        <Skills></Skills>
       </section>
 
       <section

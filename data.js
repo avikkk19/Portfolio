@@ -86,6 +86,62 @@ const data = {
         media: "/src/assets/projects/chefMate.mp4",
       }
     ]
+  },
+  
+  skills: {
+    title: "Skill's",
+    tagline: "A showcase of my technical and creative abilities.",
+    skills: [
+      {
+        title: "Frontend Development",
+        languages: ["TypeScript", "JavaScript", "HTML", "CSS"],
+        frameWorks: ["React", "Tailwind"],
+        tools: ["Vite", "DOM APIs"],
+        relatedProjects: ["Trefloo", "CardioGuard", "ChefMate", "Crecon"]
+      },
+      {
+        title: "Backend Development",
+        languages: ["Python", "TypeScript", "Deno"],
+        frameWorks: ["FastAPI"],
+        tools: ["Supabase", "Firebase", "REST APIs"],
+        relatedProjects: ["Chatbot", "CardioGuard", "Crecon"]
+      },
+      {
+        title: "Machine Learning & AI",
+        languages: ["Python"],
+        frameWorks: ["Scikit-learn", "BERT", "LLMs"],
+        tools: ["OpenAI API", "Anthropic API"],
+        relatedProjects: ["CardioGuard", "Chatbot", "ChefMate"]
+      },
+      {
+        title: "Database & Cloud",
+        languages: ["SQL"],
+        frameWorks: ["Express"],
+        tools: ["Supabase", "Firebase", "PostgreSQL"],
+        relatedProjects: ["Trefloo", "Qconn", "Crecon", "Chatbot"]
+      },
+      {
+        title: "Embedded Systems & IoT",
+        languages: ["C", "C++"],
+        frameWorks: ["Arduino Framework"],
+        tools: ["Arduino", "ECG Sensor"],
+        relatedProjects: ["CardioGuard"]
+      },
+      {
+        title: "UI/UX & Design Tools",
+        languages: ["JavaScript"],
+        frameWorks: ["React"],
+        tools: ["Figma", "Canva", "Framer Motion"],
+        relatedProjects: ["Trefloo", "ChefMate", "Crecon"]
+      },
+      {
+        title: "Version Control & Dev Tools",
+        languages: ["Shell"],
+        frameWorks: ["Node.js"],
+        tools: ["Git", "GitHub", "VS Code", "Postman"],
+        relatedProjects: ["All Projects"]
+      }
+    ]
   }
 
 };
