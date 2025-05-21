@@ -1,4 +1,4 @@
-# 🚀 Mokshith's Portfolio
+# 🚀 Portfolio
 
 Welcome to my portfolio repository! This is a modern, responsive portfolio website built with React and Vite. Feel free to fork this repository and customize it to showcase your own projects and skills.
 
@@ -82,6 +82,6 @@ Feel free to reach out to me at mokshithrao1481@gmail.com for any questions or c
 
 ---
 
-Made with ❤️ by Mokshith Rao
+Made with ❤️ by Mokshith Rao and avinash
 
 *Feel free to star ⭐ this repository if you find it helpful!*
