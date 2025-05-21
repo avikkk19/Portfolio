@@ -141,9 +141,233 @@ const data = {
         tools: ["Git", "GitHub", "VS Code", "Postman"],
         relatedProjects: ["All Projects"]
       }
-    ]
+    ],
+    skillDetails: {
+      // Frontend Development Skills
+        "HTML": {
+          "description": "Markup language for structuring web content.",
+          "experience": "2 years",
+          "projects": 10,
+          "proficiency": 90
+        },
+        "CSS": {
+          "description": "Style sheet language used to design web pages.",
+          "experience": "2 years",
+          "projects": 10,
+          "proficiency": 85
+        },
+        "JavaScript": {
+          "description": "Core scripting language for interactive web functionality.",
+          "experience": "2 years",
+          "projects": 9,
+          "proficiency": 85
+        },
+        "VS Code": {
+          "description": "Code editor used for most development work.",
+          "experience": "2 years",
+          "projects": 20,
+          "proficiency": 95
+        },
+        "Git": {
+          "description": "Version control system for source code management.",
+          "experience": "2 years",
+          "projects": 20,
+          "proficiency": 90
+        },
+        "GitHub": {
+          "description": "Platform for hosting Git repositories and collaboration.",
+          "experience": "2 years",
+          "projects": 20,
+          "proficiency": 90
+        },
+        "React": {
+          "description": "JavaScript library for building user interfaces.",
+          "experience": "1.5 years",
+          "projects": 8,
+          "proficiency": 80
+        },
+        "Tailwind": {
+          "description": "Utility-first CSS framework for styling.",
+          "experience": "1.5 years",
+          "projects": 7,
+          "proficiency": 75
+        },
+        "Vite": {
+          "description": "Fast frontend build tool for modern web projects.",
+          "experience": "1.5 years",
+          "projects": 6,
+          "proficiency": 70
+        },
+        "TypeScript": {
+          "description": "Typed superset of JavaScript improving code quality.",
+          "experience": "1 year",
+          "projects": 5,
+          "proficiency": 70
+        },
+        "DOM APIs": {
+          "description": "Web APIs for interacting with document content.",
+          "experience": "1 year",
+          "projects": 5,
+          "proficiency": 70
+        },
+      
+        "Python": {
+          "description": "General-purpose programming language used for backend and ML.",
+          "experience": "1.5 years",
+          "projects": 6,
+          "proficiency": 75
+        },
+        "FastAPI": {
+          "description": "Modern web framework for building APIs with Python.",
+          "experience": "1 year",
+          "projects": 3,
+          "proficiency": 65
+        },
+        "Supabase": {
+          "description": "Open-source Firebase alternative used for backend services.",
+          "experience": "1 year",
+          "projects": 4,
+          "proficiency": 70
+        },
+        "Firebase": {
+          "description": "Backend-as-a-Service used for auth and real-time DB.",
+          "experience": "6 months",
+          "projects": 2,
+          "proficiency": 60
+        },
+        "REST APIs": {
+          "description": "Standard protocol for backend communication.",
+          "experience": "1.5 years",
+          "projects": 5,
+          "proficiency": 75
+        },
+        "Deno": {
+          "description": "Secure runtime for JavaScript and TypeScript.",
+          "experience": "6 months",
+          "projects": 1,
+          "proficiency": 40
+        },
+      
+        "Scikit-learn": {
+          "description": "Machine learning library in Python.",
+          "experience": "1 year",
+          "projects": 3,
+          "proficiency": 60
+        },
+        "BERT": {
+          "description": "Transformer model for NLP tasks.",
+          "experience": "6 months",
+          "projects": 2,
+          "proficiency": 55
+        },
+        "LLMs": {
+          "description": "Large Language Models for generative and NLP tasks.",
+          "experience": "1 year",
+          "projects": 3,
+          "proficiency": 65
+        },
+        "OpenAI API": {
+          "description": "API for integrating GPT-based models into apps.",
+          "experience": "1 year",
+          "projects": 3,
+          "proficiency": 65
+        },
+        "Anthropic API": {
+          "description": "API for Claude models used in AI applications.",
+          "experience": "6 months",
+          "projects": 1,
+          "proficiency": 50
+        },
+      
+        "SQL": {
+          "description": "Structured language for managing relational databases.",
+          "experience": "1 year",
+          "projects": 4,
+          "proficiency": 65
+        },
+        "PostgreSQL": {
+          "description": "Advanced open-source relational database system.",
+          "experience": "6 months",
+          "projects": 2,
+          "proficiency": 60
+        },
+        "Express": {
+          "description": "Minimal web framework for Node.js backend development.",
+          "experience": "6 months",
+          "projects": 2,
+          "proficiency": 55
+        },
+      
+        "C": {
+          "description": "Procedural programming language used in embedded systems.",
+          "experience": "1 year",
+          "projects": 2,
+          "proficiency": 40
+        },
+        "C++": {
+          "description": "Object-oriented programming language used occasionally.",
+          "experience": "6 months",
+          "projects": 1,
+          "proficiency": 20
+        },
+        "Arduino Framework": {
+          "description": "Open-source electronics platform based on simple I/O.",
+          "experience": "1 year",
+          "projects": 2,
+          "proficiency": 50
+        },
+        "Arduino": {
+          "description": "Microcontroller board platform for IoT development.",
+          "experience": "1 year",
+          "projects": 2,
+          "proficiency": 50
+        },
+        "ECG Sensor": {
+          "description": "Sensor for detecting heart signals used in IoT health systems.",
+          "experience": "6 months",
+          "projects": 1,
+          "proficiency": 40
+        },
+      
+        "Figma": {
+          "description": "Collaborative interface design tool.",
+          "experience": "1.5 years",
+          "projects": 5,
+          "proficiency": 75
+        },
+        "Canva": {
+          "description": "Design tool used for quick UI/UX mockups.",
+          "experience": "1.5 years",
+          "projects": 4,
+          "proficiency": 70
+        },
+        "Framer Motion": {
+          "description": "Animation library for React.",
+          "experience": "6 months",
+          "projects": 2,
+          "proficiency": 55
+        },
+      
+        "Shell": {
+          "description": "Command line operations and scripting.",
+          "experience": "1 year",
+          "projects": 5,
+          "proficiency": 60
+        },
+        "Node.js": {
+          "description": "JavaScript runtime environment for backend scripting.",
+          "experience": "1 year",
+          "projects": 3,
+          "proficiency": 60
+        },
+        "Postman": {
+          "description": "API testing and documentation tool.",
+          "experience": "1.5 years",
+          "projects": 7,
+          "proficiency": 75
+        }
+    }
   }
-
 };
 
 export default data;
