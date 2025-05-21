@@ -27,7 +27,7 @@ const data = {
     hoverFacts: `
       The journey of learning never ends. I am always curious, always building, and always striving to make technology more accessible and impactful. Whether it's experimenting with new frameworks or mentoring peers, I believe in sharing knowledge and growing together.
     `,
-    profileImage: "/src/assets/big4-2.jpg",
+    profileImage: "/avi profile shrink.jpg",
   },
 
   projects: {
@@ -42,7 +42,7 @@ const data = {
         techstack: ["React", "Tailwind", "Supabase"],
         type: "video",
         link: "https://trefloo.vercel.app",
-        media: "/src/assets/projects/Trefloo.mp4",
+        media: "/projects/Trefloo.mp4",
       },
       {
         title: "CardioGuard",
@@ -58,9 +58,9 @@ const data = {
         ],
         type: "video",
         link: "cardioGuard.vercel.app",
-        media: "/src/assets/projects/cardioGuard.mp4",
+        media: "/projects/cardioGuard.mp4",
       },
-      
+
       {
         title: "Crecon",
         description:
@@ -68,10 +68,8 @@ const data = {
         techstack: ["React", "Supabase", "Tailwind"],
         type: "video",
         link: "crecon.vercel.app",
-        media: "/src/assets/projects/Crecon.mp4",
+        media: "/projects/Crecon.mp4",
       },
-      
-   
     ],
   },
 
@@ -93,7 +91,7 @@ const data = {
         tools: ["Supabase", "Firebase", "REST APIs"],
         relatedProjects: ["Chatbot", "CardioGuard", "Crecon"],
       },
-     
+
       {
         title: "Database & Cloud",
         languages: ["SQL"],
@@ -115,7 +113,6 @@ const data = {
         tools: ["Figma", "Canva", "Framer Motion"],
         relatedProjects: ["Trefloo", "ChefMate", "Crecon"],
       },
-     
     ],
     skillDetails: {
       // Frontend Development Skills
