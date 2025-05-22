@@ -4,7 +4,7 @@ import Projects from "./UI/Projects.jsx";
 import Contacts from "./UI/Contacts.jsx";
 import Background from "./components/Background.jsx";
 import Skills from "./UI/Skills.jsx";
-import GitHub from "./UI/Github.jsx";
+import GitHub from "./UI/GitHub.jsx";
 import Footer from "./UI/Footer.jsx";
 
 function App() {
