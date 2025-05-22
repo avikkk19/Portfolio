@@ -28,14 +28,14 @@ function Skills() {
 
   const SkillModal = ({ skill, details, onClose }) => (
     <motion.div
-      className="fixed inset-0 bg-black/80 backdrop-blur-lg flex items-center justify-center z-50 p-4"
+      className="fixed inset-0 bg-black/80 backdrop-blur-lg flex items-center justify-center z-50 p-2 sm:p-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       onClick={onClose}
     >
       <motion.div
-        className="bg-white/5 backdrop-blur-xl p-8 rounded-3xl max-w-xl w-full mx-auto border border-white/10 shadow-2xl relative"
+        className="bg-white/5 backdrop-blur-xl p-4 sm:p-8 rounded-2xl sm:rounded-3xl max-w-xl w-full mx-auto border border-white/10 shadow-2xl relative max-h-[90vh] overflow-y-auto"
         initial={{ scale: 0.9, opacity: 0, y: 50 }}
         animate={{ scale: 1, opacity: 1, y: 0 }}
         exit={{ scale: 0.9, opacity: 0, y: 50 }}
@@ -43,7 +43,7 @@ function Skills() {
         onClick={e => e.stopPropagation()}
       >
         <button
-          className="absolute top-4 right-4 text-white/70 hover:text-white text-2xl p-2 rounded-full hover:bg-white/10 transition-colors"
+          className="absolute top-2 right-2 sm:top-4 sm:right-4 text-white/70 hover:text-white text-xl sm:text-2xl p-2 rounded-full hover:bg-white/10 transition-colors touch-manipulation"
           onClick={onClose}
           aria-label="Close modal"
         >
@@ -53,27 +53,27 @@ function Skills() {
           >✕</motion.span>
         </button>
 
-        <div className="flex items-center gap-4 mb-6">
-          <h3 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-200 to-gray-400">{skill}</h3>
+        <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+          <h3 className="text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-200 to-gray-400">{skill}</h3>
         </div>
-        <div className="space-y-6">
-          <p className="text-white/90 text-lg leading-relaxed">{details.description}</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-              <p className="text-white/70 text-sm mb-1">Experience</p>
-              <p className="text-white font-medium text-lg">{details.experience}</p>
+        <div className="space-y-4 sm:space-y-6">
+          <p className="text-white/90 text-base sm:text-lg leading-relaxed">{details.description}</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+            <div className="bg-white/5 p-3 sm:p-4 rounded-xl border border-white/10">
+              <p className="text-white/70 text-xs sm:text-sm mb-1">Experience</p>
+              <p className="text-white font-medium text-base sm:text-lg">{details.experience}</p>
             </div>
-            <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-              <p className="text-white/70 text-sm mb-1">Projects</p>
-              <p className="text-white font-medium text-lg">{details.projects}</p>
+            <div className="bg-white/5 p-3 sm:p-4 rounded-xl border border-white/10">
+              <p className="text-white/70 text-xs sm:text-sm mb-1">Projects</p>
+              <p className="text-white font-medium text-base sm:text-lg">{details.projects}</p>
             </div>
           </div>
-          <div className="space-y-3">
-            <div className="flex justify-between text-sm">
+          <div className="space-y-2 sm:space-y-3">
+            <div className="flex justify-between text-xs sm:text-sm">
               <span className="text-white/70">Proficiency</span>
               <span className="text-white font-medium">{details.proficiency}%</span>
             </div>
-            <div className="h-3 bg-white/10 rounded-full overflow-hidden">
+            <div className="h-2 sm:h-3 bg-white/10 rounded-full overflow-hidden">
               <motion.div
                 className="h-full bg-gradient-to-r from-gray-300 via-white to-gray-300"
                 initial={{ width: 0 }}

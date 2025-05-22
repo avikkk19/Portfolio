@@ -34,10 +34,10 @@ function Projects() {
                     return (
                         <div 
                             key={index}
-                            className="group relative flex flex-col-reverse md:flex-row-reverse gap-8 rounded-2xl p-8 transition-all duration-300"
+                            className="group relative flex flex-col-reverse md:flex-row-reverse gap-8 rounded-2xl px-4 py-6 md:p-8 transition-all duration-300"
                         >
                             {/* Content Section */}
-                            <div className="flex-1 space-y-4 p-8 bg-gradient-to-br from-gray-900/40 to-gray-800/40 rounded-xl border border-white/10 shadow-lg">
+                            <div className="flex-1 space-y-4 p-4 md:p-8 bg-gradient-to-br from-gray-900/40 to-gray-800/40 rounded-xl border border-white/10 shadow-lg">
                                 <h3 className="text-2xl font-bold bg-gradient-to-r from-amber-400 via-purple-400 to-pink-400 bg-clip-text text-transparent group-hover:from-amber-300 group-hover:via-purple-300 group-hover:to-pink-300 transition-colors duration-300">
                                     {project.title}
                                 </h3>
@@ -70,7 +70,7 @@ function Projects() {
                             </div>
 
                             <div className="md:w-1/2 bg-gradient-to-br from-gray-900/40 to-gray-800/40 rounded-xl overflow-hidden border border-white/10 shadow-lg cursor-pointer">
-                                <div className="p-2 bg-gradient-to-br from-gray-900/60 to-gray-800/60">
+                                <div className="p-1 md:p-2 bg-gradient-to-br from-gray-900/60 to-gray-800/60">
                                     {project.type === "video" ? (
                                         <video 
                                             ref={el => videoRefs.current[index] = el}

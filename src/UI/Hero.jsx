@@ -56,14 +56,14 @@ function Hero() {
         <div className="w-full overflow-x-hidden p-2">
             <Header />
 
-            <div className="md:flex md:flex-row-reverse md:gap-15 md:px-10 md:items-center">
-                <section className="h-screen w-full border-2 overflow-hidden">
+            <div className="flex flex-col md:flex-row-reverse md:gap-15 md:px-10 md:items-center">
+                <section className="hidden md:block h-screen w-full border-2 overflow-hidden">
                     <div className="h-3/8 w-full scale-190 translate-x-15 translate-y-[45%] md:translate-x-40 md:translate-y-15 md:h-7/8 md:scale-115 ">
                        
                     </div>
                 </section>
                 <section
-                    className="w-full flex flex-col items-center gap-4 px-5 py-8 -translate-y-[35%] md:translate-y-0 transition-opacity duration-700 ease-in-out"
+                    className="w-full flex flex-col items-center gap-4 px-5 py-8 md:py-8 md:translate-y-0 transition-opacity duration-700 ease-in-out"
                 >
                     <HeadingLarge label={data.hero.Heading} />
                     <HeadingSmall label={data.hero.tagline} className="text-gray-300  xl:mx-15" />

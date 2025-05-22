@@ -21,7 +21,7 @@ function App() {
 
       <section
         id="projects"
-        className="min-h-screen w-full mt-10 md:mt-20 p-3 md:p-6"
+        className="min-h-screen w-full mt-2 md:mt-20 p-3 md:p-6"
       >
         <Projects></Projects>
       </section>
