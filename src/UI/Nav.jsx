@@ -4,9 +4,9 @@ const name = data.general.catchy; // Dont go fancy it is just the name
 const navData = [
     {name: "About", href: "#about"},
     {name: "Projects", href: "#projects"},
-    {name: "skills", href: "#skills"},
-    {name: "contact", href: "#contact"},
-    {name: "Socials", href: "#socials"},
+    {name: "Skills", href: "#skills"},
+    {name: "GitHub", href: "#github"},
+    {name: "Contact", href: "#contact"},
 ]
 
 function Nav() {

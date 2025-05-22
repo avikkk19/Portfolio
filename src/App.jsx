@@ -4,6 +4,8 @@ import Projects from "./UI/Projects.jsx";
 import Contacts from "./UI/Contacts.jsx";
 import Background from "./components/Background.jsx";
 import Skills from "./UI/Skills.jsx";
+import GitHub from "./UI/Github.jsx";
+
 function App() {
   return (
     <>
@@ -25,6 +27,10 @@ function App() {
 
       <section id="skills" className="min-h-screen w-full mt-5 md:mt-10 p-3 md:p-6">
         <Skills></Skills>
+      </section>
+
+      <section id="github" className="min-h-screen w-full mt-2 md:mt-0 p-3 md:p-6">
+        <GitHub></GitHub>
       </section>
 
       <section

@@ -189,7 +189,7 @@ function Skills() {
                   whileTap={{ scale: 0.98 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <h3 className="text-2xl font-bold text-white mb-5 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-white-500 to-amber-400">
+                  <h3 className="text-2xl font-bold text-white mb-5 bg-clip-text bg-gradient-to-r from-purple-400 via-white-500 to-amber-400">
                     {skill.title}
                   </h3>
                   

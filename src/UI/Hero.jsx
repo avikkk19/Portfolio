@@ -97,14 +97,6 @@ function Hero() {
                 </section>
                 <section
                     className="w-full flex flex-col items-center gap-4 px-5 py-8 -translate-y-[35%] md:translate-y-0 transition-opacity duration-700 ease-in-out"
-                    style={{
-                        background: "rgba(255, 255, 255, 0.08)",
-                        boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
-                        backdropFilter: "blur(12px)",
-                        WebkitBackdropFilter: "blur(12px)",
-                        borderRadius: "24px",
-                        border: "1px solid rgba(255, 255, 255, 0.18)"
-                    }}
                 >
                     <HeadingLarge label={data.hero.Heading} />
                     <HeadingSmall label={data.hero.tagline} className="text-gray-300  xl:mx-15" />
