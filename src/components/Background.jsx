@@ -1,7 +1,7 @@
 function Background() {
     return (
         <div className="absolute h-full w-full">
-            {[...Array(80)].map((_, i) => {
+            {[...Array(100)].map((_, i) => {
                 const colors = ["gold"];
                 const background = colors[Math.floor(Math.random() * colors.length)];
                 const duration = 3 + Math.random() * 1; // 3s to 7s

@@ -5,6 +5,7 @@ import Contacts from "./UI/Contacts.jsx";
 import Background from "./components/Background.jsx";
 import Skills from "./UI/Skills.jsx";
 import GitHub from "./UI/Github.jsx";
+import Footer from "./UI/Footer.jsx";
 
 function App() {
   return (
@@ -38,6 +39,10 @@ function App() {
         className="min-h-screen w-full mt-10 md:mt-20 p-3 md:p-6"
       >
         <Contacts></Contacts>
+      </section>
+
+      <section>
+        <Footer />
       </section>
     </>
   );

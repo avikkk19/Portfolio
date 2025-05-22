@@ -79,9 +79,10 @@ Feel free to reach out to me at mokshithrao1481@gmail.com for any questions or c
 
 - Thanks to all contributors who have helped improve this portfolio
 - Special thanks to the open-source community for the amazing tools and libraries
+- Special thanks to Avinash for his valuable contributions and support in building this portfolio
 
 ---
 
-Made with ❤️ by Mokshith Rao and avinash
+Made with ❤️ by Mokshith Rao and Avinash
 
 *Feel free to star ⭐ this repository if you find it helpful!*

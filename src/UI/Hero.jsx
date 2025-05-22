@@ -51,28 +51,6 @@ function Hero() {
         };
     }, [isScrolled]);
 
-    /* // Track if WebGL is available and if Spline failed
-    const [webglError, setWebglError] = useState(false);
-
-    // Utility to check WebGL support
-    function isWebGLAvailable() {
-        try {
-            const canvas = document.createElement("canvas");
-            return !!(
-                window.WebGLRenderingContext &&
-                (canvas.getContext("webgl") || canvas.getContext("experimental-webgl"))
-            );
-        } catch (e) {
-            return false;
-        }
-    }
-
-    // Only check once on mount
-    useEffect(() => {
-        if (!isWebGLAvailable()) {
-            setWebglError(true);
-        }
-    }, []); */
 
     return (
         <div className="w-full overflow-x-hidden p-2">
@@ -81,18 +59,7 @@ function Hero() {
             <div className="md:flex md:flex-row-reverse md:gap-15 md:px-10 md:items-center">
                 <section className="h-screen w-full border-2 overflow-hidden">
                     <div className="h-3/8 w-full scale-190 translate-x-15 translate-y-[45%] md:translate-x-40 md:translate-y-15 md:h-7/8 md:scale-115 ">
-                        {/* {!webglError ? (
-                            <Spline
-                                scene="https://prod.spline.design/Zdm1LQAreiugS6eP/scene.splinecode"
-                                onError={() => setWebglError(true)}
-                            />
-                        ) : (
-                            <div className="flex items-center justify-center h-full text-red-400 bg-black/70 rounded-xl p-8">
-                                <span>
-                                    3D experience unavailable: WebGL is not supported or context was lost.
-                                </span>
-                            </div>
-                        )} */}
+                       
                     </div>
                 </section>
                 <section
